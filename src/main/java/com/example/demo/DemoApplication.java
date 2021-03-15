@@ -30,5 +30,12 @@ public class DemoApplication {
 		return String.format("Hello, pulling from git %s!", name);
 	}
 
+	@GetMapping("/testingtravis")
+	public String travistravis(@RequestParam(value = "name", defaultValue = "using git") String name){
+		return String.format("Hello, I'm testing travis ci %s!", name);
+	}
+
+
+
 
 }
