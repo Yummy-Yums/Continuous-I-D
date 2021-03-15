@@ -20,4 +20,9 @@ public class DemoApplication {
 		return String.format("Hello %s!", name);
 	}
 
+	@GetMapping("/testing")
+	public String testing(@RequestParam(value = "name", defaultValue = "testing") String name){
+		return String.format("Hello %s!", name);
+	}
+
 }
