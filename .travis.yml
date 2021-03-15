@@ -1,0 +1,15 @@
+language: java
+jdk:
+  - openjdk15
+
+script:
+  - ./mvnw clean install -B
+
+sudo: true
+
+before_install: chmod +x mvnw
+
+jobs:
+  include:
+    - stage: test
+      script: ./mvnw clean test
