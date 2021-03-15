@@ -13,3 +13,9 @@ jobs:
   include:
     - stage: test
       script: ./mvnw clean test
+
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  app: name-d
+
