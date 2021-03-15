@@ -25,4 +25,10 @@ public class DemoApplication {
 		return String.format("Hello, testing route 1..2 1...2 %s!", name);
 	}
 
+	@GetMapping("/usinggit")
+	public String usinggit(@RequestParam(value = "name", defaultValue = "using git") String name){
+		return String.format("Hello, pulling from git %s!", name);
+	}
+
+
 }
