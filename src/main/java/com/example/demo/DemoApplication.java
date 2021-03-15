@@ -22,7 +22,7 @@ public class DemoApplication {
 
 	@GetMapping("/testing")
 	public String testing(@RequestParam(value = "name", defaultValue = "testing") String name){
-		return String.format("Hello %s!", name);
+		return String.format("Hello, testing route 1..2 1...2 %s!", name);
 	}
 
 }
